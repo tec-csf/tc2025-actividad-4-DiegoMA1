@@ -67,7 +67,7 @@ int main(int argc, char * argv[]) {
             }
             else if (pid == -1){
                 current->id = 0;
-                printf("Hubo un error al crear proces hijo. Numero de procesos hijos creados hasta ahora: %d\n", i + 1);
+                printf("Hubo un error al crear proceso hijo. Numero de procesos hijos creados hasta ahora: %d\n", i + 1);
                 break;
             }
             else{
@@ -91,7 +91,7 @@ int main(int argc, char * argv[]) {
             }    
         }
 
-        printf("PID Hijo\tPromedio\tHistograma\n");
+        printf("\nPID Hijo\tPromedio\tHistograma\n");
 
         for (current = promprocesos; current < last; ++current){
             printf("%d\t\t%d\t\t", current->id, current->promedio);
